@@ -28,6 +28,7 @@ p= predict(linear, training)
 ldahist(data= p$x[,1], g= training$Species)
 
 # Bi-Plot
+install.packages("devtools") # first should package "devtools" be installed
 library(devtools)
 install_github("fawda123/ggord")
 library(ggord)
