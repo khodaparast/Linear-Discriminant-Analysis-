@@ -44,14 +44,10 @@ ggord(linear, training$Species)
  tab= table(Predicted= p1, Actual= training$Species)
  tab  # get us confusion matrix 
  
+ p2= predict(linear, testing)$ class
+ tab= table(Predicted= p2, Actual= testing$Species)
+ tab1  # get us confusion matrix 
  
-
-
-
-
-
-
-
-
-
-					
+ Accuracy_of_trainin=sum(diag(tab))/sum(tab) # accuracy of training
+ Accuracy_of_test=sum(diag(tab1))/sum(tab1) # accuracy of training
+ 					
